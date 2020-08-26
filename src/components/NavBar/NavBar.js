@@ -1,16 +1,21 @@
 import React from 'react'
 import './NavBar.css'
+import house from '../../assets/house.png'
+import portfolio from '../../assets/portfolio.png'
+import contact from '../../assets/contact.png'
+import resume from '../../assets/resume.png'
+
 
 
 function NavBar(){
     return(
         <>
-            <div className="navBar">
+            <div className="navBar" >
                 <ul>
-                    <li>Home</li>
-                    <li>Portfolio</li>
-                    <li>Resume</li>
-                    <li>Contact</li>
+                    <a href=""><li><img src={house}/>Home </li></a>
+                    <a href=""><li><img src={portfolio}/>Portfolio </li></a>
+                    <a href=""><li><img src={resume}/>Resume </li></a>
+                    <a href=""><li><img src={contact}/>Contact </li></a>
                 </ul>
             </div>
         </>

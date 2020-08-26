@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+import App from './App';
 // import * as serviceWorker from './serviceWorker';
 import HomePage from "./views/HomePage/HomePage"
 
@@ -11,7 +11,7 @@ ReactDOM.render(
   //   <HomePage/>
   // </React.StrictMode>
   
-  <HomePage/>,
+  <App/>,
   document.getElementById('root')
 );
 

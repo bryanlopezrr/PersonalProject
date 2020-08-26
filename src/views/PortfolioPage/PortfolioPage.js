@@ -2,13 +2,13 @@ import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 
 
-function HomePage(){
+function PortfolioPage(){
     return(
         <>
             <NavBar/>
-            <h1>Home Page</h1>
+            <h1>Portfolio Page</h1>    
         </>
     )
 }
 
-export default HomePage;
+export default PortfolioPage;
