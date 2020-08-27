@@ -4,7 +4,7 @@ import house from '../../assets/house.png'
 import portfolio from '../../assets/portfolio.png'
 import contact from '../../assets/contact.png'
 import resume from '../../assets/resume.png'
-
+import {Link, Router, BrowserRouter} from 'react-router-dom'
 
 
 function NavBar(){
@@ -12,10 +12,22 @@ function NavBar(){
         <>
             <div className="navBar" >
                 <ul>
-                    <a href=""><li><img src={house}/>Home </li></a>
-                    <a href=""><li><img src={portfolio}/>Portfolio </li></a>
-                    <a href=""><li><img src={resume}/>Resume </li></a>
-                    <a href=""><li><img src={contact}/>Contact </li></a>
+                    <li>
+                        <img src={house}/> 
+                        <Link to="/home">Home</Link>
+                    </li>
+                    <li>
+                        <img src={portfolio}/>
+                        <Link to="/portfolio">Portfolio</Link> 
+                    </li>
+                    <li>
+                        <img src={resume}/> 
+                        <Link to="/resume">Resume</Link>
+                    </li>
+                    <li>
+                        <img src={contact}/> 
+                        <Link to="/contact">Contact</Link>
+                    </li>
                 </ul>
             </div>
         </>

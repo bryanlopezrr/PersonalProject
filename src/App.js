@@ -1,12 +1,13 @@
 import React from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 
-import { Router, Route } from 'react-router';
+import { BrowserRouter, Route, Switch} from 'react-router-dom';
 import ContactPage from './views/ContactPage/ContactPage';
 import ResumePage from './views/ResumePage/ResumePage'
 import HomePage from './views/HomePage/HomePage';
 import PortfolioPage from './views/PortfolioPage/PortfolioPage';
+import ErrorPage from './views/ErrorPage/ErrorPage'
 
 function App() {
   return (
@@ -29,10 +30,24 @@ function App() {
 
 
     <>
-      <ContactPage/>
-      <ResumePage/>
-      <HomePage/>
-      <PortfolioPage/>
+   
+      <BrowserRouter>
+
+        <Switch>
+          <Route path="/home"  component={HomePage}></Route>  
+          <Route path="/resume"  component={ResumePage}></Route>  
+          <Route path="/portfolio"  component={PortfolioPage}></Route>  
+          <Route path="/contact"  component={ContactPage}></Route>  
+          <Route component={ErrorPage}></Route>
+        </Switch>
+ 
+        {/* <ContactPage/>
+        <ResumePage/>
+        <HomePage/>
+        <PortfolioPage/>
+       */}
+      
+      </BrowserRouter>
     </>
 
 
