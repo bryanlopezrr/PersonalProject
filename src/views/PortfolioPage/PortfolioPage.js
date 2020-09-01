@@ -1,14 +1,14 @@
 import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
+// import { Navigation } from '../../components/NavBar/NavBar'
 
 
-function PortfolioPage(){
-    return(
-        <>
-            <NavBar/>
-            <h1>Portfolio Page</h1>    
-        </>
-    )
-}
+// THIS IS ONE OPTION, BUT THERE MAY BE A BETTER WAY....
+/*
+const PortfolioPage = () => <Navigation>
+    <h1>Portfolio Page</h1>
+</Navigation>
+*/
 
-export default PortfolioPage;
+const PortfolioPage = () => <h1>Portfolio Page</h1>
+
+export default PortfolioPage

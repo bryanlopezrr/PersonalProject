@@ -1,16 +1,9 @@
 import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
+// import { Navigation } from '../../components/NavBar/NavBar'
 
+const ErrorPage = () => <>
+    <h1>Error Page</h1>     
+    <h2>404 Error Not Found</h2>
+</>
 
-function ErrorPage(){
-    return(
-        <>
-            <NavBar/>
-
-            <h1>Error Page</h1>     
-            <h2>404 Error Not Found</h2>       
-        </>
-    )
-}
-
-export default ErrorPage;
+export default ErrorPage

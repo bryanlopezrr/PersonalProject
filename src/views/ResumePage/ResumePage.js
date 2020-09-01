@@ -1,14 +1,12 @@
 import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
+// import { Navigation } from './../../components/NavBar/NavBar'
 
+/*
+const ResumePage = () => <Navigation>
+    <h1>Resume Page</h1>
+</Navigation>
+*/
 
-function ResumePage(){
-    return(
-        <>
-            <NavBar/>
-            <h1>Resume Page</h1>
-        </>
-    )
-}
+const ResumePage = () => <h1>Resume Page</h1>
 
-export default ResumePage;
+export default ResumePage

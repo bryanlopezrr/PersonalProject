@@ -1,15 +1,13 @@
 import React from 'react'
-import NavBar from '../../components/NavBar/NavBar'
+// import { Navigation } from './../../components/NavBar/NavBar'
 
+// THIS IS ONE OPTION, BUT THERE MAY BE A BETTER WAY....
+/*
+const ContactPage = () =>  <Navigation>
+    <h1>Contact Page</h1>
+</Navigation>
+*/
 
-function ContactPage(){
-    return(
-        <>
-            <NavBar/>
+const ContactPage = () => <h1>Contact Page</h1>
 
-            <h1>Contact Page</h1>            
-        </>
-    )
-}
-
-export default ContactPage;
+export default ContactPage

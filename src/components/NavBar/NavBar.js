@@ -1,37 +1,92 @@
 import React from 'react'
+
+// CSS import for navigation
 import './NavBar.css'
-import house from '../../assets/house.png'
-import portfolio from '../../assets/portfolio.png'
-import contact from '../../assets/contact.png'
-import resume from '../../assets/resume.png'
-import {Link, Router, BrowserRouter} from 'react-router-dom'
+
+// IMAGES
+import house        from './../../assets/house.png'
+import portfolio    from './../../assets/portfolio.png'
+import contact      from './../../assets/contact.png'
+import resume       from './../../assets/resume.png'
+
+// IMPORTING REF TO ANY OTHER LIBS HERE...
+import { NavLink } from 'react-router-dom'
 
 
-function NavBar(){
-    return(
-        <>
-            <div className="navBar" >
-                <ul>
-                    <li>
+export const Navigation = props => {
+
+    const activeClassName="activePage"
+
+    return <div id="page">
+        <div className="navBar" >
+            <ul>
+                <li>
+                    <NavLink activeClassName={activeClassName} to="/home">
                         <img src={house}/> 
-                        <Link to="/home">Home</Link>
-                    </li>
-                    <li>
-                        <img src={portfolio}/>
-                        <Link to="/portfolio">Portfolio</Link> 
-                    </li>
-                    <li>
+                        <span>Home</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink activeClassName={activeClassName} to="/portfolio">
+                        <img src={portfolio}/> 
+                        <span>Portfolio</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink activeClassName={activeClassName} to="/resume">
                         <img src={resume}/> 
-                        <Link to="/resume">Resume</Link>
-                    </li>
-                    <li>
+                        <span>Resume</span>
+                    </NavLink>
+                </li>
+
+                <li>
+                    <NavLink activeClassName={activeClassName} to="/contact">
                         <img src={contact}/> 
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </div>
-        </>
-    )
+                        <span>Contact</span>
+                    </NavLink>
+                </li>
+
+            </ul>
+        </div>
+
+        {/* THIS IS A SPECIAL PROP KEYWORD, ALLOWS US TO USE THIS COMPONENT AS A WRAPPER see https://reactjs.org/docs/composition-vs-inheritance.html */}
+        {props.children}
+
+    </div>
 }
 
-export default NavBar;
+export const BryansNav = props => {
+
+    const createNavigationItem = ({to, imageSrc, title}) => {
+        return <li>
+            <NavLink activeClassName="activePage" to={to}>
+                <div className="navBar2_circle">
+                    <img src={imageSrc}/> 
+                </div>
+                <span>{title}</span>
+            </NavLink>
+        </li>
+    }
+
+
+    return <div id="page">
+        <div className="navBar2" >
+            <ul>
+                {createNavigationItem({to: '/home', imageSrc: house, title: 'Home'})}
+                {createNavigationItem({to: '/portfolio', imageSrc: portfolio, title: 'Portfolio'})}
+                {createNavigationItem({to: '/resume', imageSrc: resume, title: 'Resume'})}
+                {createNavigationItem({to: '/contact', imageSrc: contact, title: 'Contact'})}
+            </ul>
+        </div>
+
+        {/* THIS IS A SPECIAL PROP KEYWORD, ALLOWS US TO USE THIS COMPONENT AS A WRAPPER see https://reactjs.org/docs/composition-vs-inheritance.html */}
+        {props.children}
+
+    </div>
+}
+
+
+
+// export default NavBar
