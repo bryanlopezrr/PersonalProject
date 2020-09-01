@@ -1,0 +1,10 @@
+.sidePane{
+    background-color: black;
+    width: 500px;
+    height: 400px;
+}
+
+.someText{
+    color: red;
+    background-color: black;
+}

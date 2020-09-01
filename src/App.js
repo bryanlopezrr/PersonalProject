@@ -28,12 +28,12 @@ function App() {
     //   </header>
     // </div>
 
-
     <>
    
       <BrowserRouter>
 
         <Switch>
+          <Route exact path="/"  component={HomePage}></Route> {/** I hope to figure out how to route / to /home*/}
           <Route path="/home"  component={HomePage}></Route>  
           <Route path="/resume"  component={ResumePage}></Route>  
           <Route path="/portfolio"  component={PortfolioPage}></Route>  
