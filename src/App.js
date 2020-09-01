@@ -1,57 +1,44 @@
-import React from 'react';
-// import logo from './logo.svg';
-import './App.css';
+// STANDARD REACT IMPORT HERE
+import React, { useState } from 'react'
 
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
-import ContactPage from './views/ContactPage/ContactPage';
-import ResumePage from './views/ResumePage/ResumePage'
-import HomePage from './views/HomePage/HomePage';
-import PortfolioPage from './views/PortfolioPage/PortfolioPage';
-import ErrorPage from './views/ErrorPage/ErrorPage'
+// CSS IMPORTS HERE
+import './App.css'
 
-function App() {
-  return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+// IMPORTS FROM INSTALLED LIBS HERE
+import { BrowserRouter, Route, Switch} from 'react-router-dom'
 
+// PAGES IMPORTED HERE FOR ROUTING
+import ContactPage    from './views/ContactPage/ContactPage'
+import ResumePage     from './views/ResumePage/ResumePage'
+import HomePage       from './views/HomePage/HomePage'
+import PortfolioPage  from './views/PortfolioPage/PortfolioPage'
+import ErrorPage      from './views/ErrorPage/ErrorPage'
 
-    <>
-   
-      <BrowserRouter>
+// All other Components Imported Here
+import { Navigation, BryansNav } from './components/NavBar/NavBar'
 
-        <Switch>
-          <Route path="/home"  component={HomePage}></Route>  
-          <Route path="/resume"  component={ResumePage}></Route>  
-          <Route path="/portfolio"  component={PortfolioPage}></Route>  
-          <Route path="/contact"  component={ContactPage}></Route>  
-          <Route component={ErrorPage}></Route>
-        </Switch>
- 
-        {/* <ContactPage/>
-        <ResumePage/>
-        <HomePage/>
-        <PortfolioPage/>
-       */}
-      
-      </BrowserRouter>
-    </>
+const App = () => {
 
+  const [isBryansNav, changeNav] = useState(false)
+  const toggleNav = () => changeNav(!isBryansNav)
 
-  );
+  const NavigationPointer = isBryansNav ? BryansNav : Navigation
+
+  return <BrowserRouter>
+    <Switch>
+      {/* THE FOLLOWING WILL ALL SHARE THE SAME NAVIGATION COMPONENT BECAUSE THEY ARE WRAPPED UNDER IT... IN NAVIGATION IT IS REF AS props.children */}
+      <NavigationPointer>
+        
+        <Route exact path="/home">
+          <HomePage toggleNav={toggleNav} isBryansNav={isBryansNav}/>
+        </Route>
+
+        <Route exact path="/resume"  component={ResumePage}/>
+        <Route exact path="/portfolio"  component={PortfolioPage}/>
+        <Route exact path="/contact"  component={ContactPage}/>
+      </NavigationPointer>
+      <Route component={ErrorPage}></Route>
+    </Switch>
+  </BrowserRouter>
 }
-
-export default App;
+export default App

@@ -11,3 +11,68 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+html, body, #root, #page {
+  height: 100%;
+}
+
+.flexboxWrap-inline {
+  display: inline-flex;
+}
+
+.flexboxWrap {
+  display: flex;
+}
+
+.flexboxWrap > .flexed-item {
+  flex: 1;
+}
+
+.flexboxWrap > .flexed-item-2 {
+  flex: 2;
+}
+
+.button {
+  width: 100px;
+  height: 30px;
+  background: cornflowerblue;
+  border-radius: 10px;
+}
+
+.button.off > .toggle {
+  transition: flex 1s ease;
+  flex: 1;
+}
+
+.button.on > .toggle {
+  transition: flex 1s ease;
+  flex: 0;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.button .ratio {
+    display: inline-block;
+    height: 100%;
+    width: 45%;
+    background: aqua;
+    border-radius: 10px;
+}
+
+.button > .ratio_label {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.pointerCursor {
+  cursor: pointer;
+}
