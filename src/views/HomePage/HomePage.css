@@ -1,0 +1,23 @@
+
+/* I had to add these for the height to work because the parent tag has to also 
+also for the child to span the 100% height */
+html, body, #root, .App {
+    height: 100%;
+  }
+
+.leftSide {
+    background-color: #545b6e;
+    color: whitesmoke;
+    float: left;
+    height: 100%;
+    width:31%;
+}
+
+.rightSide {
+    background-color: #36bdbd;
+    color: whitesmoke;
+    float: right;
+    height: 100%;
+    width:69%;
+}
+

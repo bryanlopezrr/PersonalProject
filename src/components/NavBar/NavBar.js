@@ -18,7 +18,7 @@ function NavBar(){
                     </li>
                     <li>
                         <img src={portfolio}/>
-                        <Link to="/portfolio">Portfolio</Link> 
+                        <Link to="/google.com">Portfolio</Link> 
                     </li>
                     <li>
                         <img src={resume}/> 
