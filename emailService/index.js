@@ -20,7 +20,7 @@ transporter.verify((error, success) => {
   if (error) {
     console.log(error);
   } else {
-    console.log('Server is ready to take messages');
+    console.log('\nServer is ready to take messages');
   }
 });
 
@@ -28,12 +28,12 @@ router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
   var message = req.body.message
-  var content = `name: ${name} \n email: ${email} \n message: ${message} `
+  var content = `Name: ${name} \n Email: ${email} \n Message: ${message} `
 
   var mail = {
     from: name,
-    to: 'lopezbryanrr@gmail.com',  // Change to email address that you want to receive messages on
-    subject: 'New Message from Contact Form',
+    to: creds.USER,  // Change to email address that you want to receive messages on
+    subject: 'New Message from Contact Form\n',
     text: content
   }
 
@@ -50,8 +50,9 @@ router.post('/send', (req, res, next) => {
   	transporter.sendMail({
     	from: "<your email address>",
     	to: email,
-    	subject: "Submission was successful",
-    	text: `Thank you for contacting us!\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
+    	subject: "Email submission was successful!",
+      text: `Thank you for contacting me! I will get back to you as
+      soon as possible\n\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
   	}, function(error, info){
     	if(error) {
       	console.log(error);

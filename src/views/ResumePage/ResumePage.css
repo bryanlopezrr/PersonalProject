@@ -1,0 +1,4 @@
+html, body, #root, .App, embed{
+    height: 100%;
+    width: 100%;
+}

@@ -1,13 +1,13 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
-import LeftPane from '../../components/LeftPane/LeftPane';
+import ContactForm from '../../components/ContactForm/ContactForm';
 
 
 function ContactPage(){
     return(
         <>
             <NavBar/>
-            <LeftPane/>
+            <ContactForm/>
             {/* <h1>Contact Page</h1>             */}
         </>
     )

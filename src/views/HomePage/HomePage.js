@@ -1,7 +1,7 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import './HomePage.css'
-
+import profilePicture from '../../assets/profilepic.png'; // gives image path
 
 function HomePage(){
     return(
@@ -11,8 +11,9 @@ function HomePage(){
             {/* <div>
                 <h1>Home Page</h1>
             </div>  */}
-        <body>
         <div className="leftSide">
+
+            <h1>Your name goes here </h1>
             <p>
             Left side
             What 
@@ -28,6 +29,9 @@ function HomePage(){
         </div>
 
         <div className="rightSide">
+            
+            <h1>Your key words go here</h1>
+
             <p>
             Right side
             What 
@@ -41,8 +45,10 @@ function HomePage(){
             Happens if I keep adding more
 
             </p>
+            <div className="pictureDiv"> 
+                <img className="featurePicture" src={profilePicture} alt="This is the profile picture that will display"/> 
+            </div>
         </div>
-        </body>
 
         </>
     )

@@ -4,6 +4,9 @@ function hidePassword(){
     process.argv is an array containing the command line arguments. 
     The first element will be 'node', the second element will be the name of the JavaScript file. 
     The next elements will be any additional command line arguments.
+
+    To run the email service you have to run:
+        npm run dev //username //password
     */
 
     password = process.argv[5];
