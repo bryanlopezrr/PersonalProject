@@ -13,8 +13,33 @@ function HomePage(){
             </div>  */}
         <div className="leftSide">
 
-            <h1>Your name goes here </h1>
+            <h1>MAGDALENA RUIZ</h1>
             <p>
+
+                <ul className="descriptionAttr">
+                    <li>Project Manager</li>
+                    <li>Avid Ski Mountain Climber</li>
+                    <li>Healthcare Industry</li>
+                    <li>Soccer Fan</li>
+                </ul>
+            Left side
+            What 
+            Happens if I keep adding more
+            text
+            to this
+            website
+            will it
+            continuet 
+            to 
+            Left side
+            What 
+            Happens if I keep adding more
+            text
+            to this
+            website
+            will it
+            continuet 
+            to 
             Left side
             What 
             Happens if I keep adding more
@@ -29,8 +54,12 @@ function HomePage(){
         </div>
 
         <div className="rightSide">
-            
-            <h1>Your key words go here</h1>
+        
+        <div className="pictureDiv"> 
+                <img className="featurePicture" src={profilePicture} alt="This is the profile picture that will display"/> 
+            </div>
+
+            <h1>CREATIVE - INNOVATIVE - DETERMINED</h1>
 
             <p>
             Right side
@@ -44,10 +73,27 @@ function HomePage(){
             to this
             Happens if I keep adding more
 
+            to 
+            Left side
+            What 
+            Happens if I keep adding more
+            text
+            to this
+            website
+            will it
+            continuet 
+            to 
+            Left side
+            What 
+            Happens if I keep adding more
+            text
+            to this
+            website
+            will it
+            continuet 
+
             </p>
-            <div className="pictureDiv"> 
-                <img className="featurePicture" src={profilePicture} alt="This is the profile picture that will display"/> 
-            </div>
+
         </div>
 
         </>

@@ -1,5 +1,6 @@
 import React from 'react'
 import './NavBar.css'
+import './Flex.css'
 import house from '../../assets/house.png'
 import portfolio from '../../assets/portfolio.png'
 import contact from '../../assets/contact.png'
@@ -10,23 +11,19 @@ import {Link, Router, BrowserRouter} from 'react-router-dom'
 function NavBar(){
     return(
         <>
-            <div className="navBar" >
-                <ul>
-                    <li>
-                        <img src={house}/> 
-                        <Link to="/home">Home</Link>
+            <div className="navBar flex-wrap center" >
+                <ul >
+                    <li className="eachIcon">  
+                        <Link to="/home"><img src={house}/></Link>
                     </li>
-                    <li>
-                        <img src={portfolio}/>
-                        <Link to="/portfolio">Portfolio</Link> 
+                    <li className="eachIcon"> 
+                        <Link to="/portfolio"><img src={portfolio}/></Link> 
                     </li>
-                    <li>
-                        <img src={resume}/> 
-                        <Link to="/resume">Resume</Link>
+                    <li className="eachIcon"> 
+                        <Link to="/resume"><img src={resume}/> </Link>
                     </li>
-                    <li>
-                        <img src={contact}/> 
-                        <Link to="/contact">Contact</Link>
+                    <li className="eachIcon">                    
+                        <Link to="/contact"><img src={contact}/> </Link>
                     </li>
                 </ul>
             </div>

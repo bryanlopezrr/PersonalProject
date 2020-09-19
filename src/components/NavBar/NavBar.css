@@ -1,17 +1,27 @@
 .navBar{
     width: 100%;
-    background-color: #9c9c9c;
+    background-color: #374a5b;
     color: white;
     padding: 10px;
+    height: 100px;
+   
 }
 
-li{
-    display: inline;
-    padding: 10px 0;
+.navBar ul{
+    margin: 0; 
+    padding: 0; 
+}
+
+.navBar li{
+  display: inline-block;
+    /* padding: 10px 0; */
+    /* margin: 0 100px 0 0; */
+    width: 200px;
+    height: 100%;
 }
 
 img{
-
-    width: 50px;
-    height: 50px;
+    color: white;
+    width: 60px;
+    height: 60px;
 }

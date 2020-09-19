@@ -6,20 +6,22 @@ html, #root, .App {
   }
 
 .leftSide {
-    background-color: #545b6e;
-    color: whitesmoke;
+    background-color: #dce7f2;
+    color: 374a5b;
     float: left;
     height: 100%;
     width:31%;
 }
 
 .rightSide {
-    background-color: #36bdbd;
-    color: whitesmoke;
+    background-color: #ffffff;
+    color: 374a5b;
     float: right;
     height: 100%;
     width:69%;
+
 }
+
 
 .pictureDiv, .featurePicture{
     width: 400px;
