@@ -3,6 +3,8 @@
 also for the child to span the 100% height */
 html, #root, .App {
     height: 100%;
+    font-weight: bolder;       
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   }
 
 .leftSide {
@@ -11,6 +13,7 @@ html, #root, .App {
     float: left;
     height: 100%;
     width:31%;
+    padding: 60px;
 }
 
 .rightSide {
@@ -19,11 +22,18 @@ html, #root, .App {
     float: right;
     height: 100%;
     width:69%;
+    padding: 60px;
 
 }
 
+.descriptionAttr{
+    list-style-type: none;
 
-.pictureDiv, .featurePicture{
-    width: 400px;
-    height: 400px;
 }
+.featurePicture{
+    width: 390px;
+    height: 420px;
+    float: right;
+    border: 8px solid #ACACAC;
+}
+

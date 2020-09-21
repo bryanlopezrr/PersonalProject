@@ -1,7 +1,8 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
 import './HomePage.css'
-import profilePicture from '../../assets/profilepic.png'; // gives image path
+import profilePicture from '../../assets/pro_pic.jpg'; // gives image path
+import Footer from '../../components/Footer/Footer'
 
 function HomePage(){
     return(
@@ -13,14 +14,15 @@ function HomePage(){
             </div>  */}
         <div className="leftSide">
 
-            <h1>MAGDALENA RUIZ</h1>
+            <h1>BRYAN LOPEZ</h1>
             <p>
 
                 <ul className="descriptionAttr">
-                    <li>Project Manager</li>
-                    <li>Avid Ski Mountain Climber</li>
-                    <li>Healthcare Industry</li>
+                    <li>Systems Engineer</li>
+                    <li>Computer Science</li>
+                    <li>Father</li>
                     <li>Soccer Fan</li>
+        
                 </ul>
             Left side
             What 
@@ -93,9 +95,9 @@ function HomePage(){
             continuet 
 
             </p>
-
+            <Footer/>
         </div>
-
+     
         </>
     )
 }

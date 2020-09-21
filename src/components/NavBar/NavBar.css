@@ -1,6 +1,6 @@
 .navBar{
     width: 100%;
-    background-color: #374a5b;
+    background-color: #475468;
     color: white;
     padding: 10px;
     height: 100px;
@@ -20,8 +20,14 @@
     height: 100%;
 }
 
-img{
+.eachIcon{
     color: white;
     width: 60px;
     height: 60px;
+}
+
+.eachIcon:hover{
+    color: white; 
+    width: 70px;
+    height: 70px;
 }

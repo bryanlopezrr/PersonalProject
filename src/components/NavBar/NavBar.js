@@ -13,17 +13,17 @@ function NavBar(){
         <>
             <div className="navBar flex-wrap center" >
                 <ul >
-                    <li className="eachIcon">  
-                        <Link to="/home"><img src={house}/></Link>
+                    <li>  
+                        <Link to="/home"><img className="eachIcon" src={house}/></Link>
                     </li>
-                    <li className="eachIcon"> 
-                        <Link to="/portfolio"><img src={portfolio}/></Link> 
+                    <li> 
+                        <Link to="/portfolio"><img className="eachIcon" src={portfolio}/></Link> 
                     </li>
-                    <li className="eachIcon"> 
-                        <Link to="/resume"><img src={resume}/> </Link>
+                    <li> 
+                        <Link to="/resume"><img className="eachIcon" src={resume}/> </Link>
                     </li>
-                    <li className="eachIcon">                    
-                        <Link to="/contact"><img src={contact}/> </Link>
+                    <li>                    
+                        <Link to="/contact"><img className="eachIcon" src={contact}/> </Link>
                     </li>
                 </ul>
             </div>

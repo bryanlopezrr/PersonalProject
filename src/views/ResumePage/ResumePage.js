@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from '../../components/NavBar/NavBar'
-import PDF from '../../assets/resume_sample.pdf';
+import PDF from '../../assets/actual_resume.pdf';
 import './ResumePage.css'
 
 
