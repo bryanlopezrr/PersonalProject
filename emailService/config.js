@@ -6,7 +6,7 @@ function hidePassword(){
     The next elements will be any additional command line arguments.
 
     To run the email service you have to run:
-        npm run dev //username //password
+        npm run dev username password
     */
 
     password = process.argv[5];

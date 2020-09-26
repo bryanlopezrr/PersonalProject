@@ -2,10 +2,15 @@
 /* I had to add these for the height to work because the parent tag has to also 
 also for the child to span the 100% height */
 html, #root, .App {
-    height: 100%;
-    font-weight: bolder;       
+    height: 100%;    
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   }
+
+h1{
+    font-weight: bolder;  
+
+}
+
 
 .leftSide {
     background-color: #dce7f2;
@@ -13,7 +18,9 @@ html, #root, .App {
     float: left;
     height: 100%;
     width:31%;
-    padding: 60px;
+    padding-top: 60px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .rightSide {
@@ -26,8 +33,15 @@ html, #root, .App {
 
 }
 
+.bodySection{
+    font-weight: light;
+    font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
 .descriptionAttr{
-    list-style-type: none;
+    list-style-type: disc;
+    padding-right: 60px;
+    padding-left: 10px;
 
 }
 .featurePicture{

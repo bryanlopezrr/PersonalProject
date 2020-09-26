@@ -28,12 +28,12 @@ router.post('/send', (req, res, next) => {
   var name = req.body.name
   var email = req.body.email
   var message = req.body.message
-  var content = `Name: ${name} \n Email: ${email} \n Message: ${message} `
+  var content = `Name: ${name}\n\nEmail: ${email}\n\n Message: ${message}`
 
   var mail = {
     from: name,
     to: creds.USER,  // Change to email address that you want to receive messages on
-    subject: 'New Message from Contact Form\n',
+    subject: 'New Message from Personal Website\n',
     text: content
   }
 
@@ -52,7 +52,7 @@ router.post('/send', (req, res, next) => {
     	to: email,
     	subject: "Email submission was successful!",
       text: `Thank you for contacting me! I will get back to you as
-      soon as possible\n\n\nForm details\nName: ${name}\n Email: ${email}\n Message: ${message}`
+      soon as possible\n\n\n\nCopy of your email:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
   	}, function(error, info){
     	if(error) {
       	console.log(error);

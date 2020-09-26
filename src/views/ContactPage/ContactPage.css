@@ -1,8 +1,16 @@
 .fullForm{
     padding: 65px;
     background-color: #ACACAC;
+    margin: 50px;
 }
 
 .contactTitle{
     padding-top: 30px;
+}
+
+.instructionsForm{
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
 }

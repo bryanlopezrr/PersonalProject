@@ -87,7 +87,7 @@ handleSubmit(e) {
     console.log(this.state);
     e.preventDefault();
 
-    fetch('http://localhost:3000/send',{
+    fetch('http://localhost:3002/send',{
         method: "POST",
         body: JSON.stringify(this.state),
         headers: {

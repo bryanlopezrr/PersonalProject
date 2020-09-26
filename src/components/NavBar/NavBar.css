@@ -3,7 +3,7 @@
     background-color: #475468;
     color: white;
     padding: 10px;
-    height: 100px;
+    height: 120px;
    
 }
 
@@ -22,8 +22,8 @@
 
 .eachIcon{
     color: white;
-    width: 60px;
-    height: 60px;
+    width: 65px;
+    height: 65px;
 }
 
 .eachIcon:hover{

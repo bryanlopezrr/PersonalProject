@@ -14,43 +14,20 @@ function HomePage(){
             </div>  */}
         <div className="leftSide">
 
-            <h1>BRYAN LOPEZ</h1>
-            <p>
-
-                <ul className="descriptionAttr">
+            <h1>BRYAN LOPEZ.</h1>
+            
+            <ul className="descriptionAttr">
                     <li>Systems Engineer</li>
                     <li>Computer Science</li>
                     <li>Father</li>
                     <li>Soccer Fan</li>
         
                 </ul>
-            Left side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            will it
-            continuet 
-            to 
-            Left side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            will it
-            continuet 
-            to 
-            Left side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            will it
-            continuet 
-            to 
+            
+            <p className="bodySection">
+            Hello there! Welcome to my personal portfolio page.
+            Feel free to hover over parts of the page to get tooltips and instructions
+            on what to do.
      
             </p>
         </div>
@@ -61,38 +38,23 @@ function HomePage(){
                 <img className="featurePicture" src={profilePicture} alt="This is the profile picture that will display"/> 
             </div>
 
-            <h1>CREATIVE - INNOVATIVE - DETERMINED</h1>
+            <div>
+                <h1>COOPERATIVE.</h1>
+                 <h1>EAGER.</h1> 
+                 <h1>DETERMINED.</h1>
+            </div>
+            
 
-            <p>
-            Right side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            Happens if I keep adding more
-            text
-            to this
-            Happens if I keep adding more
+            <p className="bodySection">
+            I'm a recent Computer Science graduate, based in Tampa, Florida. 
+            I've been exploring web development and have made this application to 
+            showcase some of my skills. 
 
-            to 
-            Left side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            will it
-            continuet 
-            to 
-            Left side
-            What 
-            Happens if I keep adding more
-            text
-            to this
-            website
-            will it
-            continuet 
+            <br/>
+            <br/>            
+            I'm also looking to continue to grow my skills and learn from industry leaders.
+            Feel free to browse around and contact me if you would like to connect for 
+            projects among other things. 
 
             </p>
             <Footer/>
