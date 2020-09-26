@@ -15,22 +15,22 @@ function NavBar(){
                 <ul >
                     <li>  
                         <Link to="/home"><img className="eachIcon" src={house}/>
-                        <h6>HOME</h6>
+                        <h6 className="iconName">HOME</h6>
                         </Link>
                     </li>
                     <li> 
                         <Link to="/portfolio"><img className="eachIcon" src={portfolio}/>
-                        <h6>PORTFOLIO</h6>
+                        <h6 className="iconName">PORTFOLIO</h6>
                         </Link> 
                     </li>
                     <li> 
                         <Link to="/resume"><img className="eachIcon" src={resume}/>
-                        <h6>RESUME</h6>
+                        <h6 className="iconName">RESUME</h6>
                         </Link>
                     </li>
                     <li>                    
                         <Link to="/contact"><img className="eachIcon" src={contact}/>
-                        <h6>CONTACT</h6>
+                        <h6 className="iconName">CONTACT</h6>
                         </Link>
                     </li>
                 </ul>

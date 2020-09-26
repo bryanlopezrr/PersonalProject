@@ -5,7 +5,7 @@ function Footer(){
 
     return(
         <>
-            <h5>All rights reserved 2020 </h5>
+            <h5>Developed using React JS - 2020 © </h5>
         </>
     )
 }

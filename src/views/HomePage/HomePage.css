@@ -6,7 +6,7 @@ html, #root, .App {
     font-family: "SF Pro Text","Myriad Set Pro","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
   }
 
-h1{
+.titleSection{
     font-weight: bolder;  
 
 }
@@ -45,9 +45,13 @@ h1{
 
 }
 .featurePicture{
-    width: 390px;
+    width: 370px;
     height: 420px;
     float: right;
     border: 8px solid #ACACAC;
 }
 
+.socialIcon{
+    padding: 10px;
+    color: #475468;
+}

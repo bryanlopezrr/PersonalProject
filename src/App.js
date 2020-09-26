@@ -39,6 +39,13 @@ function App() {
           <Route path='/portfolio' component={() => { 
               window.location.href = 'https://github.com/bryanlopezrr';}}/>
 
+
+          <Route path='/linkedin' component={() => { 
+              window.location.href = 'https://www.linkedin.com/in/bryanlopezrr/';}}/>
+
+
+
+
           {/* <Route path="/portfolio"  component={PortfolioPage}></Route>   */}
           <Route path="/contact"  component={ContactPage}></Route>  
           <Route component={ErrorPage}></Route>

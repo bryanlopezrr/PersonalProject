@@ -10,12 +10,12 @@ function ContactPage(){
         <>
             <NavBar/>
 
-            <h1 className="contactTitle">LET'S GET IN TOUCH: </h1>
+            <h1 className="contactTitle">CONTACT ME: </h1>
 
             <div className="fullForm">
                 <div className="instructionsForm">
-                Need anything built, want to work together or simply want to have a chat?
-                Drop me an e-mail at lopezbryanrr@gmail.com or simply fill out the form below and I will get
+                <b>***</b>Need anything built, want to work together or simply want to have a chat?
+                Drop me an e-mail at <b>lopezbryanrr@gmail.com</b> or simply fill out the form below and I will get
                 back to you soon!
                 </div>
                 <ContactForm/>

@@ -31,3 +31,9 @@
     width: 70px;
     height: 70px;
 }
+
+.iconName{
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+}

@@ -1,11 +1,15 @@
 .fullForm{
-    padding: 65px;
+    padding-right: 65px;
+    padding-left: 65px;
+    padding-bottom: 65px;
+    padding-top: 30px;
     background-color: #ACACAC;
     margin: 50px;
 }
 
 .contactTitle{
     padding-top: 30px;
+    font-weight: bolder;  
 }
 
 .instructionsForm{
@@ -13,4 +17,5 @@
     padding-left: 30px;
     padding-right: 30px;
     text-align: center;
+    font-size: large;
 }
