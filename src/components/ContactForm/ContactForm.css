@@ -1,5 +1,3 @@
-.captchaStyle{
-    display: 'flex';
-    alignItems: 'center';
-    justifyContent: 'center';
+.captcha{
+    margin-top: 10px;
 }

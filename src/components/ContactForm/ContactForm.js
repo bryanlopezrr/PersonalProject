@@ -75,18 +75,24 @@ class ContactForm extends React.Component {
                 <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
+            
             </form>
+
+            
 
             {/* process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY */}
             
-            
+
+            {/* I need to completely wire the recaptcha to the backend and also style and modify the button above it vv*/}
+
+
+            <div className="captcha flex-wrap center" >
              <Recaptcha
-             className="captchaStyle"
                   sitekey= {"6LcyXdEZAAAAAB2bVzRDePqlH6M7GESAde652pQL"}
                   render="invisible"
                   theme="dark"
              />
-    
+            </div>
 
             </div>
         );

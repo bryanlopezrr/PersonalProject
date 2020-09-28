@@ -10,6 +10,7 @@
 .navBar ul{
     margin: 0; 
     padding: 0; 
+ 
 }
 
 .navBar li{
@@ -18,6 +19,7 @@
     /* margin: 0 100px 0 0; */
     width: 200px;
     height: 100%;
+
 }
 
 .eachIcon{
@@ -36,4 +38,9 @@
     color: white;
     font-weight: bolder;
     padding: 5px;
+}
+
+h6{
+    color: white;
+    font-weight: bolder;
 }

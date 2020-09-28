@@ -4,7 +4,7 @@ import './HomePage.css'
 import profilePicture from '../../assets/pro_pic.jpg'; // gives image path
 import Footer from '../../components/Footer/Footer'
 import FontAwesome from 'react-fontawesome';
-import {Link, Router, BrowserRouter} from 'react-router-dom'
+import {Link } from 'react-router-dom'
 
 function HomePage(){
     return(
@@ -53,7 +53,7 @@ function HomePage(){
         <div className="rightSide">
         
         <div className="pictureDiv"> 
-                <img className="featurePicture" src={profilePicture} alt="This is the profile picture that will display"/> 
+                <img alt="myPicture" className="featurePicture" src={profilePicture}/> 
             </div>
 
             <div>
