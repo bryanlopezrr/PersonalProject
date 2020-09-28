@@ -1,0 +1,5 @@
+.captchaStyle{
+    display: 'flex';
+    alignItems: 'center';
+    justifyContent: 'center';
+}

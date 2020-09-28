@@ -1,6 +1,6 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Recaptcha  from 'react-recaptcha'
 
 // function ContactForm(){
 
@@ -42,10 +42,21 @@ class ContactForm extends React.Component {
                 }
         }
 
+
+
+
+
+
+
         resetForm(){
     
             this.setState({name: '', email: '', message: ''})
          }
+
+
+ 
+
+
 
         render(){
         return(
@@ -65,6 +76,18 @@ class ContactForm extends React.Component {
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
             </form>
+
+            {/* process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY */}
+            
+            
+             <Recaptcha
+             className="captchaStyle"
+                  sitekey= {"6LcyXdEZAAAAAB2bVzRDePqlH6M7GESAde652pQL"}
+                  render="invisible"
+                  theme="dark"
+             />
+    
+
             </div>
         );
     }
